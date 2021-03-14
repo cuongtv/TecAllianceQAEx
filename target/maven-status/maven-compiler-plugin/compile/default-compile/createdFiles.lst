@@ -1,0 +1,9 @@
+fw\settings\Log.class
+fw\driverfactory\DriverManagerFactory$1.class
+fw\driverfactory\EdgeDriverManager.class
+fw\driverfactory\DriverManager.class
+fw\driverfactory\DriverManagerFactory$DriverType.class
+fw\settings\Constants.class
+fw\driverfactory\ChromeDriverManager.class
+fw\driverfactory\DriverManagerFactory.class
+fw\driverfactory\FirefoxDriverManager.class
