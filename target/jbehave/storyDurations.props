@@ -1,6 +1,6 @@
 #org.jbehave.core.embedder.StoryManager
-#Sun Mar 14 02:58:48 ICT 2021
-google/google_search_story.story=5000
+#Sun Mar 14 11:33:26 ICT 2021
+google/google_search_story.story=14000
 threads=1
-total=5000
-threadAverage=5000
+total=14000
+threadAverage=14000

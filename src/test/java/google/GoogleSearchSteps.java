@@ -29,7 +29,7 @@ public class GoogleSearchSteps {
 	protected WebDriver driver;
 	protected WebDriverWait wait;
 	Log log = new Log();
-	static DriverManager drvManager_Chrome;
+	static DriverManager drvManager;
 
 	@BeforeStory
 	public static void setupClass() {
@@ -37,12 +37,12 @@ public class GoogleSearchSteps {
 		ThreadContext.put("logLocation", Constants.TEST_LOG);
 		LoggerContext ctx = (LoggerContext) LogManager.getContext(false);
 		ctx.reconfigure();
-		drvManager_Chrome = DriverManagerFactory.getManager(DriverType.CHROME);
+		drvManager = DriverManagerFactory.getManager(DriverType.CHROME);
 	}
 
 	@BeforeScenario
 	public void beforeScenario() {
-		driver = drvManager_Chrome.getDriver();
+		driver = drvManager.getDriver();
 		driver.manage().timeouts().setScriptTimeout(Constants.TIMEOUT_IN_SECOND, TimeUnit.SECONDS);
 	}
 
