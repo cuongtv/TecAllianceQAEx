@@ -1,5 +1,7 @@
 package google;
 
+import static org.junit.Assert.assertTrue;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -82,5 +84,6 @@ public class GoogleSearchSteps {
 		} else {
 			log.pass("Found [" + count + "] result(s).");
 		}
+		assertTrue(count > 0);
 	}
 }
