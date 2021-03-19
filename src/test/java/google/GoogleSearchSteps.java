@@ -79,11 +79,14 @@ public class GoogleSearchSteps {
 				count++;
 			}
 		}
+
+		// for custom log report
 		if (count == 0) {
 			log.fail("Not found the text [" + expectString + "] in search results");
 		} else {
-			log.pass("Found [" + count + "] result(s).");
+			log.pass("Found [" + count + "] result(s) for text [" + expectString + "].");
 		}
+		// for TestRun result
 		assertTrue(count > 0);
 	}
 }
